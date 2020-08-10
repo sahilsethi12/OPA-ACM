@@ -377,7 +377,7 @@ kind: Secret
 metadata:
   labels:
     gatekeeper.sh/system: "yes"
-  name: gatekeeper-webhook-server-cert
+  name: server-cert
   namespace: gatekeeper-system
 ---
 apiVersion: v1
@@ -569,7 +569,7 @@ spec:
       - name: cert
         secret:
           defaultMode: 420
-          secretName: gatekeeper-webhook-server-cert
+          secretName: server-cert
 ---
 apiVersion: admissionregistration.k8s.io/v1beta1
 kind: ValidatingWebhookConfiguration
