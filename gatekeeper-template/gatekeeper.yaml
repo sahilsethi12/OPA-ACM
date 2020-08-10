@@ -577,7 +577,7 @@ metadata:
   creationTimestamp: null
   labels:
     gatekeeper.sh/system: "yes"
-  name: gatekeeper-validating-webhook-configuration
+  name: gatekeeper-webhook
 webhooks:
 - clientConfig:
     caBundle: Cg==
