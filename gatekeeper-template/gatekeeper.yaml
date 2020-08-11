@@ -503,7 +503,7 @@ spec:
       containers:
       - args:
         - --port=8443
-        - --log-level=DEBUG
+        - --logtostderr
         - --exempt-namespace=gatekeeper-system
         - --operation=webhook
         - --audit-interval=30
@@ -641,4 +641,4 @@ subjects:
 - kind: ServiceAccount
   name: gatekeeper-admin
   namespace: gatekeeper-system
- 
+  
